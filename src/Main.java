@@ -86,27 +86,22 @@ class Auditory {
 
         for (Person student : students.stream().filter(p -> p.vision == visions.NOTHING & p.height.equals("Низкий") & !p.attention).collect(Collectors.toList())) {
             tryPlant(student, auditory.length);
-            out.println();
         }
 
         for (Person student : students.stream().filter(p -> p.vision == visions.NOTHING & p.height.equals("Средний") & p.attention).collect(Collectors.toList())) {
             tryPlant(student, auditory.length);
-            out.println();
         }
 
         for (Person student : students.stream().filter(p -> p.vision == visions.NOTHING & p.height.equals("Средний") & !p.attention).collect(Collectors.toList())) {
             tryPlant(student, auditory.length);
-            out.println();
         }
 
         for (Person student : students.stream().filter(p -> p.vision == visions.NOTHING & p.height.equals("Высокий") & p.attention).collect(Collectors.toList())) {
             tryPlant(student, auditory.length);
-            out.println();
         }
 
         for (Person student : students.stream().filter(p -> p.vision == visions.NOTHING & p.height.equals("Высокий") & !p.attention).collect(Collectors.toList())) {
             tryPlant(student, auditory.length);
-            out.println();
         }
 
         for (int x = 0; x < auditory.length; x++) {
